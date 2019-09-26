@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/* フォント */
+
+.editor-block-list__layout, .blocks {
+  font-family: 'Montserrat', sens-serif;
+}
+.editor-block-list__layout {
+  --f1: 2.44em;
+  --f2: 1.95em;
+  --f3: 1.56em;
+  --f4: 1.25em;
+  --f5: 1em;
+  --f6: 0.8em;
+}
+
+/* 高さをアレンジ */
+
+.is-style-lpheight {
+  min-height: 70vh;
+}
+
+/* 影をつける */
+
+.is-style-lpshadow {
+  text-shadow: 0 0 5px rgba(0, 0, 0, .8);
+}
+
+/* コンセプト */
+
+.is-style-lpconcepts {
+  margin-bottom: 70px;
+}
+.is-style-lpconcepts h3 {
+  font-size: var(--f4)!important;
+}

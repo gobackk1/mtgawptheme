@@ -1,0 +1,131 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-size: 1.6rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.8;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+a, a:visited {
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0px !important;
+}
+
+.container {
+  width: 98%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.btn {
+  position: relative;
+  display: block;
+  background: #d82d0f;
+  max-width: 180px;
+  text-align: center;
+  padding: 5px 0;
+  text-decoration: none !important;
+}
+
+.btn:after {
+  content: 'MORE';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 90%;
+  background: #000;
+  transform: rotate3d(1, 0, 0, 0deg) translateZ(-20px);
+  transition: .3s;
+}
+
+.btn:before {
+  content: '';
+  position: absolute;
+  top: 38%;
+  right: 5%;
+  display: block;
+  width: 7px;
+  height: 7px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(45deg);
+}
+
+.btn:hover:after {
+  transform: rotate3d(1, 0, 0, -70deg) translateZ(-20px);
+  transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@media (min-width: 768px) {
+  .pc-text-center {
+    text-align: center;
+  }
+  .sp-only {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .pc-text-center.pc-only {
+    display: none;
+  }
+}
